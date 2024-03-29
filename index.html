@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Maker with Blockly</title>
+    <script src="https://unpkg.com/blockly/blockly.min.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="blocklyDiv" style="height: 480px; width: 600px;"></div>
+    <!-- Audio elements for sounds -->
+    <audio id="sound1" src="sound1.mp3" preload="auto"></audio>
+    <audio id="sound2" src="sound2.mp3" preload="auto"></audio>
+    <audio id="sound3" src="sound3.mp3" preload="auto"></audio>
+    <!-- Blockly toolbox XML -->
+    <xml id="toolbox" style="display: block">
+  <category name="Sounds" colour="160">
+    <!-- <block type="play_sound">
+        <field name="SOUND">Sound 1</field>
+      </block> -->
+      
+    <block type="play_sound">
+      <field name="SOUND">Sound 1</field>
+    </block>
+    <block type="play_sound">
+      <field name="SOUND">Sound 2</field>
+    </block>
+    <block type="play_sound">
+      <field name="SOUND">Sound 3</field>
+    </block>
+  </category>
+</xml>
+
+  
+</body>
+</html>

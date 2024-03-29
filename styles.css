@@ -1,0 +1,6 @@
+/* Example of responsiveness with media queries */
+@media screen and (max-width: 600px) {
+    #blocklyDiv {
+        width: 100%;
+    }
+}
